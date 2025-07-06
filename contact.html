@@ -25,10 +25,8 @@
   <meta name="twitter:image" content="https://www.navamya.com/images/contact-banner.jpg">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
@@ -118,7 +116,7 @@
     <!-- Left: Director Info -->
     <div class="col-md-6 mb-4 mb-md-0">
       <h2 class="mb-3">CONNECT WITH NAVAMYA</h2>
-      <img src="images/director.jpg" alt="Navnit Kumar" style="max-width: 200px;" class="mb-2">
+      <img src="logo.png" alt="Navnit Kumar" style="max-width: 200px;" class="mb-2">
       <h5><strong>Navnit Kumar</strong><br>Director & CEO</h5>
       <p>At Navamya, we understand the complexities of manufacturing. Connecting with us opens doors to customized
         solutions, expert support, and long-term partnerships. Reach out and let’s build something great together.</p>
@@ -126,7 +124,7 @@
 
     <!-- Right: Contact Form -->
     <div class="col-md-6">
-      <form action="contact_submit.php" method="POST">
+      <form id="contactForm">
         <div class="mb-3">
           <label for="firstName">First Name *</label>
           <input type="text" name="firstName" id="firstName" class="form-control" required>
@@ -146,8 +144,11 @@
           <label for="message">Message/Requirements</label>
           <textarea name="message" id="message" class="form-control" rows="3"></textarea>
         </div>
-        <div class="g-recaptcha" data-sitekey="6Ld_1XQrAAAAAHVxMCYBKQYaYAG6DyhYLDVwFbdp"></div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <!-- Success/Error Messages -->
+        <div id="formMessage" class="mb-3"></div>
+        
+        <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </div>
@@ -235,7 +236,6 @@
    <script src="script.js"></script>
   <!-- ✅ BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 

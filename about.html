@@ -156,7 +156,7 @@
       <!-- Left: Director Info -->
       <div class="col-md-6 mb-4 mb-md-0">
         <h2 class="mb-3">CONNECT WITH NAVAMYA</h2>
-        <img src="images/director.jpg" alt="Navnit Kumar" style="max-width: 200px;" class="mb-2">
+        <img src="logo.png" alt="Navnit Kumar" style="max-width: 200px;" class="mb-2">
         <h5><strong>Navnit Kumar</strong><br>Director & CEO</h5>
         <p>At Navamya, we understand the complexities of manufacturing. Connecting with us opens doors to customized
           solutions, expert support, and long-term partnerships. Reach out and let’s build something great together.</p>
@@ -164,7 +164,32 @@
 
       <!-- Right: Contact Form -->
       <div class="col-md-6">
-        <form action="contact_submit.php" method="POST">
+        <form id="contactForm" class="quick-contact-form">
+          <div class="mb-3">
+            <label for="firstName">First Name *</label>
+            <input type="text" name="firstName" id="firstName" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="lastName">Last Name *</label>
+            <input type="text" name="lastName" id="lastName" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message">Message/Requirements</label>
+            <textarea name="message" id="message" class="form-control" rows="3"></textarea>
+          </div>
+          
+          <!-- Success/Error Messages -->
+          <div id="formMessage" class="mb-3"></div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+        </form>
           <div class="mb-3">
             <label for="firstName">First Name *</label>
             <input type="text" name="firstName" id="firstName" class="form-control" required>

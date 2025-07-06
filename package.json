@@ -1,0 +1,19 @@
+{
+  "name": "navamya-website",
+  "version": "1.0.0",
+  "description": "Navamya Technology Company Website - With Database",
+  "main": "server_with_db.js",
+  "scripts": {
+    "start": "node server_with_db.js",
+    "dev": "node server_with_db.js",
+    "simple": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "open": "^8.4.0"
+  },
+  "keywords": ["navamya", "website", "database", "express", "sqlite"],
+  "author": "Navamya Technology",
+  "license": "ISC"
+}
