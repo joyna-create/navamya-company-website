@@ -1,0 +1,222 @@
+/* === Global Styles === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #212529;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Navbar (matches footer styling) === */
+.navbar {
+  background-color: #f3f6fa !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #0d3c61;
+}
+
+.navbar .nav-link {
+  color: #0d3c61;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #2d74c4;
+  text-decoration: underline;
+}
+
+.navbar .nav-link.active {
+  color: #2d74c4;
+  font-weight: 600;
+}
+
+
+.carousel-item img {
+  height: 400px; /* Set desired height */
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* === Headings Section === */
+.text-center {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* === Cards === */
+.card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: none;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #212529;
+}
+
+.btn-outline-primary {
+  color: #0d3c61;
+  border-color: #0d3c61;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d3c61;
+  color: white;
+}
+
+/* === Contact Form === */
+form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2d74c4;
+  box-shadow: 0 0 4px rgba(45, 116, 196, 0.3);
+}
+
+.btn-primary {
+  background-color: #0d3c61;
+  border: none;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #155c8a;
+}
+
+/* === Footer Wrapper === */
+.footer-wrapper {
+  background-color: #f3f6fa;
+  color: #333;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dcdcdc;
+}
+
+/* === Footer Section === */
+footer {
+  padding-bottom: 2rem;
+}
+
+footer h5 {
+  color: #0d3c61;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+footer p,
+footer label,
+footer input,
+footer li {
+  color: #333 !important;
+}
+
+footer .nav-link,
+footer .nav-item a {
+  color: #555 !important;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+footer .nav-link:hover,
+footer .nav-item a:hover {
+  color: #2d74c4 !important;
+  text-decoration: underline;
+}
+
+footer input.form-control {
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 0.5rem;
+}
+
+footer input.form-control::placeholder {
+  color: #999;
+}
+
+footer .btn-primary {
+  background-color: #0d3c61;
+  border: none;
+  color: #ffffff;
+  transition: background 0.2s ease;
+}
+
+footer .btn-primary:hover {
+  background-color: #155c8a;
+  color: #fff;
+}
+
+footer .list-unstyled a {
+  color: #555;
+  transition: color 0.2s;
+}
+
+footer .list-unstyled a:hover {
+  color: #2d74c4;
+}
+
+footer .bi {
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+footer .bi:hover {
+  color: #2d74c4;
+}
